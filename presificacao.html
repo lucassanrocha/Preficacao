@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Precificação</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <header>
+        <h1>Precificação</h1>   
+ </header>
+    <section>
+        <div>
+      <p>Fechamendo Dx<input type="text" name="dxFechamendo" id="dxFechamento" placeholder="Fechamendo DX"> <br></p>    
+    <p>Abertura DX<input type="text" name="dxAbertura" id="dxAbertura" placeholder="Abertura Dx"> <br></p>
+    <p>Maxima Dx<input type="text" name="dxMaxima" id="dxMaxima" placeholder="Maxima Dx"> <br></p>
+    <p>Minima Dx <input type="text" name="dxMinima" id="dxMinima" placeholder="Minima Dx"><br></p>
+    <p>Fechamendo DOLFUT<input type="text" name="dolarFechamento" id="dolarFechamento" placeholder="Fcha. Dolar"><br></p>
+    <p>Ajuste do Dolar<input type="text" name="dolarAjuste" id="dolarAjuste" placeholder="Ajuste do Dolar"> <br></p>
+    <input type="button" value="calcular" onclick="calcularValores()">
+        </div>
+        <div id="resdx">
+       <p id="dx"></p>
+        </div>
+        <div id="resab">
+            <p id="ab"></p>
+        </div>
+        <div id="resaj">
+            <p id="aj"></p>
+        </div>
+    </section>
+    <footer>
+        <p>&copy; Lucas Rocha</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
