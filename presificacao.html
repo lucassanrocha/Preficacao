@@ -12,24 +12,24 @@
         <h1>Precificação</h1>   
  </header>
     <section>
-        <div>
-      <p>Fechamendo Dx<input type="text" name="dxFechamendo" id="dxFechamento" placeholder="Fechamendo DX"> <br></p>    
-    <p>Abertura DX<input type="text" name="dxAbertura" id="dxAbertura" placeholder="Abertura Dx"> <br></p>
-    <p>Maxima Dx<input type="text" name="dxMaxima" id="dxMaxima" placeholder="Maxima Dx"> <br></p>
-    <p>Minima Dx <input type="text" name="dxMinima" id="dxMinima" placeholder="Minima Dx"><br></p>
-    <p>Fechamendo DOLFUT<input type="text" name="dolarFechamento" id="dolarFechamento" placeholder="Fcha. Dolar"><br></p>
-    <p>Ajuste do Dolar<input type="text" name="dolarAjuste" id="dolarAjuste" placeholder="Ajuste do Dolar"> <br></p>
-    <input type="button" value="calcular" onclick="calcularValores()">
+        <div id="primeiraDiv">
+        <p>Fechamendo Dx <br></p> 
+        <input type="text" name="dxFechamendo" id="dxFechamento" placeholder="Fechamendo DX">  
+         <p>Abertura DX <br></p>
+        <input type="text" name="dxAbertura" id="dxAbertura" placeholder="Abertura Dx">
+        <p>Maxima Dx <br></p>
+        <input type="text" name="dxMaxima" id="dxMaxima" placeholder="Maxima Dx">
+        <p>Minima Dx <br></p>
+        <input type="text" name="dxMinima" id="dxMinima" placeholder="Minima Dx">
+        <p>Fechamendo DOLFUT<br></p>
+        <input type="text" name="dolarFechamento" id="dolarFechamento" placeholder="Fcha. Dolar">
+        <p>Ajuste do Dolar <br></p>
+        <input type="text" name="dolarAjuste" id="dolarAjuste" placeholder="Ajuste do Dolar"><br>
+        <input type="button" value="Calcular" onclick="calcularValores()" class="bt">
         </div>
-        <div id="resdx">
-       <p id="dx"></p>
-        </div>
-        <div id="resab">
-            <p id="ab"></p>
-        </div>
-        <div id="resaj">
-            <p id="aj"></p>
-        </div>
+            <div id="resdx"> </div>
+             <div id="resab"></div>
+             <div id="resaj"></div>
     </section>
     <footer>
         <p>&copy; Lucas Rocha</p>
