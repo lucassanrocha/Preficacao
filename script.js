@@ -39,9 +39,9 @@ function calcularValores(){
 */
 
 
-    resdx;dx.innerHTML = `Max Dx: ${resultadoDeVariacao(quadroDx[1],valoresNumber[4]).toPrecision(6)}`
-    resdx;dx.innerHTML += '<br>'
     resdx;dx.innerHTML += `Abertura :${resultadoDeVariacao(quadroDx[0],valoresNumber[4]).toPrecision(6) }`
+    resdx;dx.innerHTML += '<br>'
+    resdx;dx.innerHTML = `Max Dx: ${resultadoDeVariacao(quadroDx[1],valoresNumber[4]).toPrecision(6)}`
     resdx;dx.innerHTML += '<br>'
     resdx;dx.innerHTML += `Min Dx: ${resultadoDeVariacao(quadroDx[2],valoresNumber[4]).toPrecision(6)}`
     
