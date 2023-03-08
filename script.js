@@ -34,18 +34,24 @@ function calcularValores(){
 ]
 /*
   quadroDx[0] variação da abertura do DX
-  quadroDx[1] variação da max Dx
-  quadroDx[2] Variação da min Dx
+  quadroDx[1] variação da min Dx
+  quadroDx[2] Variação da max Dx
 */
+let abertuta = resultadoDeVariacao(quadroDx[0],valoresNumber[4])
 
-
-    resdx;dx.innerHTML += `Abertura :${resultadoDeVariacao(quadroDx[0],valoresNumber[4]).toPrecision(6) }`
-    resdx;dx.innerHTML += '<br>'
-    resdx;dx.innerHTML = `Max Dx: ${resultadoDeVariacao(quadroDx[1],valoresNumber[4]).toPrecision(6)}`
-    resdx;dx.innerHTML += '<br>'
-    resdx;dx.innerHTML += `Min Dx: ${resultadoDeVariacao(quadroDx[2],valoresNumber[4]).toPrecision(6)}`
     
-    resab;ab.innerHTML = `Fechamento Dolar${valoresNumber[4]}`
+    resdx;dx.innerHTML = `Max Abertura :${ maxVariacao(abertuta).toPrecision(6)}`
+    resdx;dx.innerHTML += '<br>'
+    resdx;dx.innerHTML += `Abertura :${ abertuta.toPrecision(6)}`
+    resdx;dx.innerHTML += '<br>'
+    resdx;dx.innerHTML += `Min Abertura :${ minVariacao(abertuta*-1).toPrecision(6)}`
+    resdx;dx.innerHTML += '<br>'
+    resdx;dx.innerHTML += '<br>'
+    resdx;dx.innerHTML += `Min Dx: ${resultadoDeVariacao(quadroDx[1],valoresNumber[4]).toPrecision(6)}`
+    resdx;dx.innerHTML += '<br>'
+    resdx;dx.innerHTML += `Max Dx: ${resultadoDeVariacao(quadroDx[2],valoresNumber[4]).toPrecision(6)}`
+    
+    resab;ab.innerHTML = `Fechamento Dolar: ${valoresNumber[4]}`
     resab;ab.innerHTML += '<br>'
     resaj;aj.innerHTML = `Max Ajuste ${maxVariacao(valoresNumber[5]).toPrecision(6)}`
     resaj;aj.innerHTML += '<br>'
